@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<meta content='width=device-width' name='viewport'>
+<title>Mixed By Louis Conley | Sacramennto Film Production Sound Mixing & Post-Production</title>
+<!-- START CONTENT FIELD: Font Tag -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Rock+Salt" rel="stylesheet">
+<!-- END CONTENT FIELD: Font Tag -->
+<link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' rel='stylesheet'>
+<link href='/stylesheets/application.css' rel='stylesheet'>
+<style>
+  /* START CONTENT FIELD: CSS */
+  /* BASE ============================================== */
+                body {
+                  background: #fff;
+                  font-family: 'Open Sans', sans-serif;
+                  /*font-weight: 400;*/
+                  }
+                strong, b, .font_bold, .contact-form {
+                  /*font-weight: 900;*/
+                  }
+                h1, h2, h3, .logo_text {
+                  font-family: 'Rock Salt', cursive;
+                  font-weight: 400;
+                  }
+                h4 {
+                  opacity:1;
+                }
+                .site_width {
+                  padding-left:3.25em;
+                }
+                .shadow_text {
+                  text-shadow: 1px 3px 8px #000;
+                }
+                .float_right {
+                  float: right;
+                }
+  /* NAVIGATION ============================================== */
+                .site_header {
+                  padding: 2em .5em;
+                  border:none;
+                  float:left;
+                  height: 100%;
+                  background: #d0660a;
+                  position: fixed;
+                  z-index: 10;
+                  color: #fff;
+                  box-shadow: 1px 3px 8px #000;
+                }
+                .site_header .site_width {
+                  padding: 0;
+                }
+                #nav {
+                  display: none;
+                  padding: 0 2em;
+                }
+                .app_nav a {
+                  display: block;
+                  margin-top: 3em;
+                  border-bottom: none;
+                  color:#fff;
+                }
+                #menu_expander, #close_menu {
+                  border-bottom: none;
+                  font-size: 2.2em;
+                }
+                #close_menu {
+                  display: none;
+                  font-size: 2.2em;
+                }
+  /* MAIN PHOTO ============================================== */
+                .home_optional_row_1 {
+                  background: url("https://s3.amazonaws.com/lawgical/assets/data/4671/original.jpg") repeat scroll center center / cover  #555A5E;
+                  padding: 25em 0;
+                  box-shadow: 0px 4px 8px #000;
+                  position: relative;
+                }
+                .home_optional_row_1:before {
+                  content: "";
+                  position: absolute;
+                  top: 0;
+                  bottom: 0;
+                  width: 100%;
+                  z-index: 1;
+                  background: rgba(103, 103, 103, 0.5);
+                }
+                .home_optional_row_1 .site_width {
+                  position: relative;
+                  z-index: 2;
+                }
+  /* ABOUT ============================================== */
+                .home_feature {
+                  background: #fff;
+                  padding: 4em 0;
+                  /*color: white;*/
+                }
+                .home_feature .site_width {
+                  max-width: 50rem;
+                }
+                .drop_cap {
+                  /*background-color: #813d02;*/
+                }
+  /* VIDEO ============================================== */
+                .home_optional_row_2 {
+                  background: inherit;
+                  }
+                .video_reel {
+                  background: #e4b389;
+                  padding: 4em 0;
+                }  
+  /* GEAR ================================================ */
+                #gear {
+                  padding: 4em 0;
+                }
+                .toggle_trigger {
+                  border-bottom: 2px solid #000;
+                  margin-top: 2em;
+                }
+  /* IMAGES ============================================== */
+                .image_array {
+                  background: #fff;
+                  padding: 4em 0;
+                  margin: 0 auto;
+                  display: flex;
+                  flex-wrap: wrap;
+                  align-items: center;
+                }
+                .image_array .site_width {
+                  max-width: 90rem;
+                }
+                .kelly_pics {
+                  max-width: 25%;
+                  vertical-align: middle;
+                  transition: transform .2s;
+                  margin:1em;
+                }
+  
+  /* LEFTOVERS ============================================== */
+                .site_content {
+                  background: #fff;
+                  padding: 0;
+                }
+  /* CONTACT ============================================== */
+                .home_optional_row_3 {
+                  background: #e4b389;
+                  padding: 2em 0;
+                }
+                .home_optional_row_3 .site_width {
+                  max-width: 45rem;
+                }
+                input[type='text'], input[type='email'], input[type='password'], textarea, select {
+                  max-width: 45rem;
+                  border-radius: 0;
+                }
+  /* FOOTER ============================================== */
+                .site_footer {
+                  background: #d0660a;
+                  }
+  /* BUTTONS ============================================== */
+                .btn, .btn:hover {
+                  background: #536e7b;
+                  border-radius: 0;
+                  font-size: 1.2em;
+                }
+                button, button:hover {
+                  padding: 0;
+                  background: transparent;
+                  border: none;
+                  box-shadow: none;
+                  font-size: 1.3em
+                }
+                .contact-form input[type='submit'] {
+                  background: #536e7b;
+                  color: #fff;
+                  border-radius: 0;
+                }
+                .contact-form input[type='submit']:hover {
+                  background: #536e7b;
+                  color: #fff;
+                }
+                .contact-form input[type='submit']:active {
+                  background-color: #536e7b;
+                  color: rgba(255, 255, 255, 0.53);
+                }
+  /* MEDIA QUERIES ============================================== */
+               @media screen and (max-width: 767px) {
+                .home_optional_row_1 {
+                  padding: 15em 0;
+                }
+                .kelly_pics {
+                  max-width: 80%;
+                }
+                h1 {
+                  font-size: 2em;
+                  line-height: 2em;
+                }
+                .table_cell {
+                    vertical-align: middle;
+                  }
+               }
+  /* END CONTENT FIELD: CSS */
+</style>
+<script src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
+<script src='../assets/application.js'></script>
+<script>
+  // START CONTENT FIELD: Javascript
+  $(document).ready(function(){
+          $('a[href^="#"]').on('click',function (e) {
+              e.preventDefault();
+  
+              var target = this.hash;
+              var $target = $(target);
+  
+              $('html, body').stop().animate({
+                  'scrollTop': $target.offset().top
+              }, 900, 'swing', function () {
+                  window.location.hash = target;
+              });
+          });
+        });
+  // SIDE MENU ====================================================
+        $(function() {
+          $('#menu_expander').click(function(event) {
+            event.preventDefault();
+            $('#nav').show(1000);
+            $('#menu_expander').hide();
+            $('#close_menu').show();
+          });
+          $('#close_menu').click(function(event) {
+            event.preventDefault();
+            $('#nav').hide(1000);
+            $('#close_menu').hide();
+            $("#menu_expander").show();
+          });
+        });
+  
+        $(function() {
+          $('.click_close').click(function(event) {
+            event.preventDefault();
+              var target = this.hash;
+              var $target = $(target);
+              $('html, body').stop().animate({
+                  'scrollTop': $target.offset().top
+              }, 900, 'swing', function () {
+                  window.location.hash = target;
+              });
+            $('#nav').hide(1000);
+            $('#close_menu').hide();
+            $("#menu_expander").show();
+          });
+        });
+  // SHOW AND HIDE ===================================================
+      function js_toggle_trigger(id) {
+        event.preventDefault();
+        var e = document.getElementById(id)
+        e.style.display = ((e.style.display != 'block') ? 'block' : 'none');
+        transition
+      };
+  // END CONTENT FIELD: Javascript
+</script>
+<!-- START CONTENT FIELD: HTML Head -->
+<meta content="Sacramento Audio Engineer focused on quality for all productions." name="description">
+
+<link rel="icon" href="https://s3.amazonaws.com/lawgical/assets/data/4672/feature.png" type="image/x-icon" />
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-209728-24', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- END CONTENT FIELD: HTML Head -->
+</head>
+<body>
+<div class='site_container' itemscope itemtype='http://schema.org/LocalBusiness'>
+  <header class="site_header">
+    <div class="site_width">
+    <!-- START CONTENT FIELD: header -->
+    <button id="menu_expander" style="display: none;">»</button>
+              <button id="close_menu" style="display: inline-block;">«</button>
+                <nav id="nav" class="app_nav" style="display: block;">
+                  <img src="https://s3.amazonaws.com/lawgical/assets/data/4672/original.png" alt="Kelly K Audio" class="logo_image">
+                  <a href="#about" class="click_close">About</a>
+                  <a href="#portfolio" class="click_close">Portfolio</a>
+                  <a href="#gear" class="click_close">Gear</a>
+                  <a href="#contact" class="click_close">Contact</a>
+                </nav>
+    <!-- END CONTENT FIELD: header -->
+    </div>
+    </header>
+<div class='home_optional_row_1'>
+<!-- START CONTENT FIELD: Home Optional Row 1 -->
+<div class="site_width">
+          <h1 class="text_center text_white shadow_text">A Genuine Passion for Audio Technology</h1>
+        </div>
+<!-- END CONTENT FIELD: Home Optional Row 1 -->
+</div>
+<div class='home_feature'>
+<div class='site_width'>
+<!-- START CONTENT FIELD: Home Feature -->
+<div id="about">
+            <div class="cols">
+              <p><span class="drop_cap" style="font-family: 'Rock Salt', cursive;">K</span>elly Kramarik is an extremely versatile freelance audio engineer based in Denver, CO. With a degree in Advertising, Theatre, and Music Technology, Kelly goes beyond sound design to understand all aspects of production. Her Master's Degree in Recording Arts from the University of Colorado, Denver brings another level of professionalism and experience.</p>
+              <p>Versatility is crucial to be a successful audio engineer. Working as a podcast engineer at <a href="https://legaltalknetwork.com/" target="_blank">Legal Talk Network</a>, an audio engineer at <a href="https://www.starz.com/" target="_blank">Starz</a>, and a freelance recording and mixing engineer, Kelly understands how audio differs across platforms, audiences, and topics. Additionally, Kelly has experience working as a production sound mixer and post production mixer, expanding her scope and ability to work in any stage of audio production. Kelly understands the delicacy needed for classical concerts but also the impact of dialogue in the film industry.</p>
+              <p>Kelly is proud to be a woman in audio, helping balance audio's mainly male-dominated industry. She brings new perspective, insight, and skill to each project she touches. Her ability to get along well with others and make every project as smooth and enjoyable of a process as possible makes her an invaluable asset to any team.</p>
+              <p class="text_center"><a href="https://s3.amazonaws.com/lawgical/assets/data/4679/original.pdf" class="btn">Full Resume</a></p>
+            </div>
+          </div>
+<!-- END CONTENT FIELD: Home Feature -->
+</div>
+</div>
+<div class='home_optional_row_2'>
+<!-- START CONTENT FIELD: Home Optional Row 2 -->
+<!-- VIDEO -->
+        <div class="video_reel" id="portfolio">
+          <div class="site_width">
+            <div class="cols">
+              <div class="col_half">
+                <div class="responsive_video">
+                  <iframe src="https://player.vimeo.com/video/395294404" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="col_half" style="margin-top:1.5em;">
+                <div class="cols_three_flow">
+                  <ul class="remove_bullets text_center" style="font-family: Rock Salt, cursive;line-height:2em;">
+                    <li>Mixing</li>
+                    <li>Recording</li>
+                    <li>Location Audio</li>
+                    <li>Live Sound</li>
+                    <li>Scoring</li>
+                    <li>Post Production</li>
+                    <li>Foley</li>
+                    <li>Video Recording</li>
+                    <li>Script Writing</li>
+                    <li>Video Editing</li>
+                    <li>Mastering</li>
+                    <li>Production</li>
+                    <li>Voice Over</li>
+                    <li>ADR</li>
+                    <li>Editing</li>
+                    <li>Sound Effects</li>
+                    <li>Sound Mixing</li>
+                    <li>FOH</li>
+                    <li>Theatre Sound Design</li>
+                    <li>Room Acoustics Analyzing</li>
+                    <li>Monitor Mixing</li>
+                    <li>Podcast Editing</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+<!-- GEAR -->
+        <div id="gear">
+          <div class="site_width">
+                <a href="#" onclick="js_toggle_trigger('toggle-show-1');">
+                  <h2 class="toggle_trigger">Systems<i class="fa fa-desktop float_right" aria-hidden="true"></i></h2>
+                </a>
+                  <div id="toggle-show-1" style="display:none;">
+                    <ul>
+                      <li>27 in iMac</li>
+                      <li>15 in MacBook Pro</li>
+                      <li>Steinberg UR44</li>
+                      <li>Avid Artist Mix</li>
+                      <li>Zoom F8</li>
+                      <li>Zoom H6</li>
+                      <li>4 Sennheiser EW 100 G3 Wireless Systems</li>
+                      <li>AKG Headphone Amp</li>
+                    </ul>
+                  </div>
+                <a href="#" onclick="js_toggle_trigger('toggle-show-2');">
+                  <h2 class="toggle_trigger">Microphones<i class="fa fa-microphone float_right" aria-hidden="true"></i></h2>
+                </a>
+                  <div id="toggle-show-2" style="display:none;">
+                    <ul>
+                      <li>Condensers – AKG 414, MKH416, MKH50, NTG2, 2 AT3527, C518 M, </li>
+                      <li>Dynamics – SM58, Beta58, 2 SM57, MD421, AKG D112, 2 Sennheiser e604, 2 VM 635, ENG-18RL</li>
+                      <li>Lavaliers – 2 Sony ECM-77B Wired, 6 TL-40 Wireless, 2 OST-801 Wireless</li>
+                      <li>Ribbons - AEA N22</li>
+                    </ul>
+                  </div>
+                <a href="#" onclick="js_toggle_trigger('toggle-show-3');">
+                  <h2 class="toggle_trigger">Software<i class="fa fa-laptop float_right" aria-hidden="true"></i></h2>
+                </a>
+                  <div id="toggle-show-3" style="display:none;">
+                    <ul>
+                      <li>Pro Tools 2018</li>
+                      <li>Logic Pro</li>
+                      <li>RX6</li>
+                      <li>Adobe Creative Suite</li>
+                      <li>QLab</li>
+                    </ul>
+                  </div>
+                <a href="#" onclick="js_toggle_trigger('toggle-show-4');">
+                  <h2 class="toggle_trigger">Headphones / Speakers<i class="fa fa-headphones float_right" aria-hidden="true"></i></h2>
+                </a>
+                  <div id="toggle-show-4" style="display:none;">
+                    <ul>
+                      <li>AKG K420 Headphones</li>
+                      <li>ATH-M50X Headphones</li>
+                      <li>JBL LSR306 Studio Monitors</li>
+                    </ul>
+                  </div>
+          </div>
+        </div>
+<!-- IMAGES -->
+      <div class="image_array">
+          <div class="site_width text_center">
+            <p>
+            <img src="https://s3.amazonaws.com/lawgical/assets/data/4674/original.jpg" class="kelly_pics" alt="Kelly Kramarick Audio Engineer">
+            <img src="https://s3.amazonaws.com/lawgical/assets/data/4673/original.jpg" class="kelly_pics" alt="Kelly Kramarick Audio Engineer">
+            <img src="https://s3.amazonaws.com/lawgical/assets/data/4675/original.jpg" class="kelly_pics" alt="Kelly Kramarick Audio Engineer">
+            <img src="https://s3.amazonaws.com/lawgical/assets/data/4676/original.jpg" class="kelly_pics" alt="Kelly Kramarick Audio Engineer">
+            <img src="https://s3.amazonaws.com/lawgical/assets/data/4678/original.jpg" class="kelly_pics" alt="Kelly Kramarick Audio Engineer">
+            <img src="https://s3.amazonaws.com/lawgical/assets/data/4677/original.jpg" class="kelly_pics" alt="Kelly Kramarick Audio Engineer">
+            </p>
+          </div>
+        </div>
+
+        </div>
+<!-- END CONTENT FIELD: Home Optional Row 2 -->
+</div>
+<div class='site_content'>
+<div class='site_width'>
+<!-- START CONTENT FIELD: Home Content -->
+
+<!-- END CONTENT FIELD: Home Content -->
+</div>
+</div>
+<div class='home_optional_row_3'>
+<!-- START CONTENT FIELD: Home Optional Row 3 -->
+<div class="site_width" id="contact">
+          <h2 class="text_white shadow_text">Contact</h2>
+          <div class='js-contact-form-placeholder'></div>
+        </div>
+<!-- END CONTENT FIELD: Home Optional Row 3 -->
+</div>
+<footer class='site_footer'>
+<div class='site_width'>
+<!-- START CONTENT FIELD: Footer -->
+<div class="cols text_white">
+            <div class="col_half">
+              <h4>Phone</h4>
+              <p class="font_large">(607) 738-0501</p>              
+            </div>
+            <div class="col_half">
+              <h4>Get Social</h4>
+              <ul class="remove_bullets">
+                <li><i class="fa fa-instagram" aria-hidden="true"></i>
+                  <a href="https://www.instagram.com/kellykaudio/">Instagram</a></li>
+                <li><i class="fa fa-twitter" aria-hidden="true"></i>
+                  <a href="https://twitter.com/kellykaudio">Twitter</a></li>
+                <li><i class="fa fa-facebook-square" aria-hidden="true"></i>
+                  <a href="https://www.facebook.com/kellykaudio/">Facebook</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <hr>
+          <p class="copyright font_small text_white text_center">
+            &copy; Copyright
+            <a class="remove_border_bottom" href="/">Kelly K Audio</a>. All&nbsp;rights&nbsp;reserved.
+            <br>
+            Powered by <a class="remove_border_bottom" href="https://www.legaltalknetwork.com/">Legal Talk Network</a>
+          </p>
+<!-- END CONTENT FIELD: Footer -->
+</div>
+</footer>
+<!-- </div> -->
+<!-- DO NOT EDIT BELOW -->
+<form class='js-contact-form contact-form hide'>
+<div class='field'>
+<input name='contact[name]' placeholder='Name *' required type='text'>
+</div>
+<div class='field'>
+<input name='contact[email]' placeholder='Email *' required type='email'>
+</div>
+<div class='field'>
+<input name='contact[phone]' placeholder='Phone *' required type='text'>
+</div>
+<div class='field'>
+<textarea name='contact[body]' placeholder='Message *' required></textarea>
+</div>
+<div class='required-field-for-robots'>
+<p>If you are a human do not fill out this field.</p>
+<input name='comment'>
+</div>
+<div class='field js-contact-submit'>
+<input type='submit' value='Send Message'>
+</div>
+</form>
+
+<!-- Last Updated: 2023-07-30T03:20:16.738Z -->
+<!-- Profile: /profiles/10272 -->
+</body>
+</html>
