@@ -1,0 +1,27 @@
+# Ignore compiled files
+*.min.js
+*.min.css
+
+# Ignore logs and databases
+*.log
+*.sqlite
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore dependencies
+/node_modules
+
+# Ignore user-specific files
+/config/application.yml
+/config/database.yml
+
+# Ignore environment variables file
+.env
+
+# Ignore compiled binaries
+/target/
+/bin/
+/*.jar
+
