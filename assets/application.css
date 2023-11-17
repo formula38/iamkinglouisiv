@@ -300,18 +300,20 @@ pre { margin-bottom: 1.5em; padding: 8px; line-height: 150%; white-space: pre-wr
 .responsive_image {
   display: block;
   max-width: 100%;
-  height: auto;
+  /* height: auto; */
+  max-height: 400px;
 }
 
 /* Optional: If you want to center the image */
 .responsive_image_container {
   text-align: center;
+  vertical-align: \;
 }
 
 /* Optional: If you want to add padding or margin */
 .responsive_image_padding {
   padding: 10px; /* Adjust as needed */
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
 
 @media screen and (max-width: 767px) { .media_xs_flexbox { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -moz-box-orient: vertical; -webkit-box-orient: vertical; -ms-box-orient: vertical; -webkit-flex-direction: column; flex-direction: column; }
