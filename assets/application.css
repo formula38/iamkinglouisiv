@@ -297,6 +297,24 @@ pre { margin-bottom: 1.5em; padding: 8px; line-height: 150%; white-space: pre-wr
 .responsive_video { position: relative; width: 100%; height: 0px; padding-top: 25px; padding-bottom: 52%; }
 .responsive_video iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 
+.responsive_image {
+  display: block;
+  max-width: 100%;
+  /* height: auto; */
+  max-height: 400px;
+  margin: auto;
+}
+.responsive_image_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+.responsive_image_padding {
+  padding: 10px; /* Adjust as needed */
+  box-sizing: content-box;
+}
+
 @media screen and (max-width: 767px) { .media_xs_flexbox { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -moz-box-orient: vertical; -webkit-box-orient: vertical; -ms-box-orient: vertical; -webkit-flex-direction: column; flex-direction: column; }
   .media_xs_flexbox > div { box-sizing: border-box; display: block; float: none !important; width: 100%; }
   .media_xs_order_one { -webkit-box-ordinal-group: 1; -moz-box-ordinal-group: 1; -ms-flex-order: 0; -webkit-order: 0; order: 0; }
