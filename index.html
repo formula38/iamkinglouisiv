@@ -1,6 +1,20 @@
 <html lang="en">
   <!-- HEAD -->
-  <head>
+  <head!-->
+    <!-- Google Tag Manager -->
+    <script>
+      (function(w,d,s,l,i){
+        w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+        var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+        j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })
+      (window,document,'script','dataLayer','GTM-MZP7SQXZ');
+    </script>
+    <!-- End Google Tag Manager -->
+
+
+
     <!-- PAGE META DATA -->
     <meta charset="UTF-8" />
     <meta content="width=device-width" name="viewport" />
@@ -30,7 +44,83 @@
 
 
     <!-- EXT. STYLESHEET -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <link href="assets/application.css" rel="stylesheet" />
+
+
+
+    <!-- CONTENT FIELD: Javascript -->
+    <script>
+          $(document).ready(function () {
+            $('a[href^="#"]').on("click", function (e) {
+              e.preventDefault();
+    
+              var target = this.hash;
+              var $target = $(target);
+    
+              $("html, body")
+                .stop()
+                .animate(
+                  {
+                    scrollTop: $target.offset().top,
+                  },
+                  900,
+                  "swing",
+                  function () {
+                    window.location.hash = target;
+                  }
+                );
+            });
+          });
+          // SIDE MENU ====================================================
+          $(function () {
+            $("#menu_expander").click(function (event) {
+              event.preventDefault();
+              $("#nav").show(1000);
+              $("#menu_expander").hide();
+              $("#close_menu").show();
+            });
+            $("#close_menu").click(function (event) {
+              event.preventDefault();
+              $("#nav").hide(1000);
+              $("#close_menu").hide();
+              $("#menu_expander").show();
+            });
+          });
+    
+          $(function () {
+            $(".click_close").click(function (event) {
+              event.preventDefault();
+              var target = this.hash;
+              var $target = $(target);
+              $("html, body")
+                .stop()
+                .animate(
+                  {
+                    scrollTop: $target.offset().top,
+                  },
+                  900,
+                  "swing",
+                  function () {
+                    window.location.hash = target;
+                  }
+                );
+              $("#nav").hide(1000);
+              $("#close_menu").hide();
+              $("#menu_expander").show();
+            });
+          });
+          // SHOW AND HIDE ===================================================
+          function js_toggle_trigger(id) {
+            event.preventDefault();
+            var e = document.getElementById(id);
+            e.style.display = e.style.display != "block" ? "block" : "none";
+            transition;
+          }
+    </script>
+
+
+    <!-- STYLE GUIDES -->
     <style>
       /* START CONTENT FIELD: CSS */
       /* BASE ============================================== */
@@ -131,7 +221,7 @@
       .drop_cap {
         /*background-color: #813d02;*/
       }
-      /* VIDEO ============================================== */
+      /* PORTFOLIO ============================================== */
       .home_optional_row_2 {
         background: inherit;
       }
@@ -237,112 +327,6 @@
       }
       /* END CONTENT FIELD: CSS */
     </style>
-
-
-    <!-- Google Tag Manager -->
-    <!-- <script
-      type="text/javascript"
-      async=""
-      src="https://www.googletagmanager.com/gtag/js?id=G-CK1ZV1QL24&amp;cx=c&amp;_slc=1"
-    ></script> -->
-    <script async="" src="//www.google-analytics.com/analytics.js"></script>
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script>
-      // START CONTENT FIELD: Javascript
-      $(document).ready(function () {
-        $('a[href^="#"]').on("click", function (e) {
-          e.preventDefault();
-
-          var target = this.hash;
-          var $target = $(target);
-
-          $("html, body")
-            .stop()
-            .animate(
-              {
-                scrollTop: $target.offset().top,
-              },
-              900,
-              "swing",
-              function () {
-                window.location.hash = target;
-              }
-            );
-        });
-      });
-      // SIDE MENU ====================================================
-      $(function () {
-        $("#menu_expander").click(function (event) {
-          event.preventDefault();
-          $("#nav").show(1000);
-          $("#menu_expander").hide();
-          $("#close_menu").show();
-        });
-        $("#close_menu").click(function (event) {
-          event.preventDefault();
-          $("#nav").hide(1000);
-          $("#close_menu").hide();
-          $("#menu_expander").show();
-        });
-      });
-
-      $(function () {
-        $(".click_close").click(function (event) {
-          event.preventDefault();
-          var target = this.hash;
-          var $target = $(target);
-          $("html, body")
-            .stop()
-            .animate(
-              {
-                scrollTop: $target.offset().top,
-              },
-              900,
-              "swing",
-              function () {
-                window.location.hash = target;
-              }
-            );
-          $("#nav").hide(1000);
-          $("#close_menu").hide();
-          $("#menu_expander").show();
-        });
-      });
-      // SHOW AND HIDE ===================================================
-      function js_toggle_trigger(id) {
-        event.preventDefault();
-        var e = document.getElementById(id);
-        e.style.display = e.style.display != "block" ? "block" : "none";
-        transition;
-      }
-      // END CONTENT FIELD: Javascript
-    </script>
-    <script>
-          (function (i, s, o, g, r, a, m) {
-            i["GoogleAnalyticsObject"] = r;
-            (i[r] =
-              i[r] ||
-              function () {
-                (i[r].q = i[r].q || []).push(arguments);
-              }),
-              (i[r].l = 1 * new Date());
-            (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m);
-          })(
-            window,
-            document,
-            "script",
-            "//www.google-analytics.com/analytics.js",
-            "ga"
-          );
-    
-          ga("create", "UA-209728-24", "auto");
-          ga("send", "pageview");
-    </script>
-
-    <!-- STYLE GUIDES -->
     <style>
       .keyword-info-container {
         box-sizing: border-box;
@@ -1305,6 +1289,17 @@
 
   <!-- BODY -->
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe 
+        src="https://www.googletagmanager.com/ns.html?id=GTM-MZP7SQXZ"
+        height="0" 
+        width="0" 
+        style="display:none;visibility:hidden">
+      </iframe>
+    </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
     <!-- SITE CONTAINER -->
     <div
       class="site_container"
@@ -1856,49 +1851,9 @@
             <input type="submit" value="Send Message" />
           </div>
         </form>
-        
-        <!-- <form class="js-contact-form contact-form hide" style="display: block">
-          <div class="field">
-            <input
-              name="contact[name]"
-              placeholder="Name *"
-              required=""
-              type="text"
-            />
-          </div>
-          <div class="field">
-            <input
-              name="contact[email]"
-              placeholder="Email *"
-              required=""
-              type="email"
-            />
-          </div>
-          <div class="field">
-            <input
-              name="contact[phone]"
-              placeholder="Phone *"
-              required=""
-              type="text"
-            />
-          </div>
-          <div class="field">
-            <textarea
-              name="contact[body]"
-              placeholder="Message *"
-              required=""
-            ></textarea>
-          </div>
-          <div class="required-field-for-robots">
-            <p>If you are a human do not fill out this field.</p>
-            <input name="comment" />
-          </div>
-          <div class="field js-contact-submit">
-            <input type="submit" value="Send Message" />
-          </div>
-        </form> -->
       </div>
     </div>
+
     <!-- FOOTER -->
     <footer class="site_footer">
       <div class="site_width">
@@ -1939,64 +1894,7 @@
             >Triple 8 Media Group LLC</a
           >
         </p>
-        <!-- END CONTENT FIELD: Footer -->
       </div>
     </footer>
-
-    <!-- DO NOT EDIT BELOW -->
-    <script>
-      (function () {
-        var js =
-          "window['__CF$cv$params']={r:'82695a322ef8cf41',t:'MTcwMDA3MDc5Mi4zOTgwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";
-        var _0xh = document.createElement("iframe");
-        _0xh.height = 1;
-        _0xh.width = 1;
-        _0xh.style.position = "absolute";
-        _0xh.style.top = 0;
-        _0xh.style.left = 0;
-        _0xh.style.border = "none";
-        _0xh.style.visibility = "hidden";
-        document.body.appendChild(_0xh);
-        function handler() {
-          var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;
-          if (_0xi) {
-            var _0xj = _0xi.createElement("script");
-            _0xj.innerHTML = js;
-            _0xi.getElementsByTagName("head")[0].appendChild(_0xj);
-          }
-        }
-        if (document.readyState !== "loading") {
-          handler();
-        } else if (window.addEventListener) {
-          document.addEventListener("DOMContentLoaded", handler);
-        } else {
-          var prev = document.onreadystatechange || function () {};
-          document.onreadystatechange = function (e) {
-            prev(e);
-            if (document.readyState !== "loading") {
-              document.onreadystatechange = prev;
-              handler();
-            }
-          };
-        }
-      })();
-    </script>
-    <iframe
-      height="1"
-      width="1"
-      style="
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        border: none;
-        visibility: hidden;
-      "
-    ></iframe>
-
-    <div class="ue-sidebar-container">
-      <iframe
-        srcdoc='<!DOCTYPE html><html><head></head><body><div class="frame-root"></div></body></html>'
-      ></iframe>
-    </div>
   </body>
 </html>
