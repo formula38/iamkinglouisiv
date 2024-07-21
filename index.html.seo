@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IAMKINGLOUISIV - SEO/PPC Specialist</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background: #f9f9f9;
+      overflow-x: hidden;
+    }
+    header {
+      background: #fff;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    header img {
+      max-width: 100px;
+    }
+    .hero {
+      background: url('https://instinctmarketing.co/wp-content/uploads/2020/04/Sacramento.jpg') no-repeat center center/cover;
+      color: #fff;
+      padding: 100px 20px;
+      text-align: center;
+      position: relative;
+    }
+    .hero h1 {
+      margin: 0;
+      font-size: 3em;
+      animation: fadeInDown 1s ease;
+    }
+    .hero p {
+      margin: 10px 0;
+      font-size: 1.2em;
+      animation: fadeInUp 1s ease;
+    }
+    .hero .cta {
+      margin-top: 20px;
+      padding: 15px 30px;
+      background: #007BFF;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      animation: fadeInUp 1s ease;
+    }
+    .section {
+      padding: 50px 20px;
+      text-align: center;
+      background: #fff;
+      margin: 20px 0;
+    }
+    .section h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #007BFF;
+      animation: fadeInDown 1s ease;
+    }
+    .section p {
+      font-size: 1em;
+      margin-bottom: 20px;
+      color: #555;
+      animation: fadeInUp 1s ease;
+    }
+    .services {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .service {
+      flex: 1;
+      min-width: 250px;
+      margin: 10px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      animation: fadeInUp 1s ease;
+    }
+    .testimonials {
+      background: #f9f9f9;
+      padding: 50px 20px;
+    }
+    .testimonial {
+      margin: 20px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      animation: fadeInUp 1s ease;
+    }
+    .contact {
+      background: #333;
+      color: #fff;
+      padding: 50px 20px;
+      position: relative;
+    }
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      max-width: 500px;
+      margin: 0 auto;
+      animation: fadeInUp 1s ease;
+    }
+    .contact form input, .contact form textarea {
+      margin-bottom: 15px;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+    .contact form button {
+      padding: 15px;
+      background: #007BFF;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 1em;
+    }
+    footer {
+      padding: 20px;
+      text-align: center;
+      background: #333;
+      color: #fff;
+    }
+    footer a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <img src="file-pIpmkGi0aJ1eFqLVVmsBBl5T" alt="IAMKINGLOUISIV Logo">
+</header>
+<div class="hero">
+  <h1>IAMKINGLOUISIV</h1>
+  <p>Expert SEO and PPC Services in Sacramento, California</p>
+  <a href="#contact" class="cta">Get Started</a>
+</div>
+
+<div class="section about">
+  <h2>About Us</h2>
+  <p>We are a premier SEO and PPC specialist company based in Sacramento, California. We help SMBs and entrepreneurs enhance their online presence and achieve their marketing goals.</p>
+  <p>Why choose us? Because we bring results. Our tailored strategies are designed to meet your specific needs and drive growth.</p>
+</div>
+
+<div class="section services">
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="service">
+      <h3>SEO Services</h3>
+      <p>Boost your organic search rankings with our comprehensive SEO services, including keyword research, on-page optimization, and link building.</p>
+    </div>
+    <div class="service">
+      <h3>PPC Services</h3>
+      <p>Drive targeted traffic to your website with our effective PPC campaigns. We manage your ads to ensure maximum ROI.</p>
+    </div>
+  </div>
+</div>
+
+<div class="section testimonials">
+  <h2>What Our Clients Say</h2>
+  <div class="testimonial">
+    <p>"IAMKINGLOUISIV transformed our online presence. Our search rankings and conversions have never been better!" - Happy Client</p>
+  </div>
+  <div class="testimonial">
+    <p>"The PPC campaigns have driven incredible traffic to our site. We couldn't be more pleased with the results." - Satisfied Client</p>
+  </div>
+</div>
+
+<div class="section contact" id="contact">
+  <h2>Contact Us</h2>
+  <form>
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+  <p>You can also reach us at (555) 555-5555 or email@example.com</p>
+</div>
+
+<footer>
+  <p>Follow us on:</p>
+  <a href="#">Facebook</a>
+  <a href="#">Twitter</a>
+  <a href="#">LinkedIn</a>
+  <p>&copy; 2024 IAMKINGLOUISIV. All rights reserved.</p>
+</footer>
+</body>
+</html>
